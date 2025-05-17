@@ -1172,13 +1172,109 @@ section,
 .clients .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
+/*--------------------------------------------------------------
+# News Section
+--------------------------------------------------------------*/
+.news .news-item {
+  background-color: var(--surface-color);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  padding: 40px 30px;
+  text-align: left;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.news .news-item .icon {
+  font-size: 32px;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 25px;
+  display: inline-block;
+  line-height: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+}
+.news .news h3 a {
+  color: color-mix(in srgb, var(--heading-color), transparent 25%);
+  font-weight: 700;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.news .news-item p {
+  margin-bottom: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  transition: 0.3s;
+}
+
+.news .news-item p {
+  margin-bottom: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  transition: 0.3s;
+}
+
+.news .news-item.item-green .icon {
+  color: rgba(43,43,43);
+  background: rgba(227, 251, 208);
+}
+
+.news .news-item.item-cyan .icon {
+  color: rgba(43,43,43);
+  background: rgba(227, 251, 208);
+  /*color: #0dcaf0;*/
+  /*background: rgba(13, 202, 240, 0.1);*/
+}
+
+.news .news-item.item-orange .icon {
+  color: rgba(43,43,43);
+  background: rgba(227, 251, 208);
+  /*color: #fd7e14;*/
+  /*background: rgba(253, 126, 20, 0.1);*/
+}
+
+.news .news-item.item-teal .icon {
+  color: rgba(43,43,43);
+  background: rgba(227, 251, 208);
+  /*color: rgba(43,43,43);*/
+  /*background: rgba(227, 251, 208);*/
+}
+
+.news .news-item.item-red .icon {
+  color: #df1529;
+  background: rgba(223, 21, 4, 0.1);
+}
+
+.news .news-item.item-indigo .icon {
+  color: #6610f2;
+  background: rgba(102, 16, 242, 0.1);
+}
+
+.news .news-item.item-pink .icon {
+  color: #f3268c;
+  background: rgba(243, 38, 140, 0.1);
+}
+
+.news .news-item:hover {
+  transform: scale(1.06);
+}
+
+.news .news-item:hover h3 a {
+  color: var(--heading-color);
+}
+
+.news .news-item:hover p {
+  color: color-mix(in srgb, var(--default-color), transparent 10%);
+}
 
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
 .services .service-item {
   background-color: var(--surface-color);
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   height: 100%;
   padding: 40px 30px;
   text-align: center;
@@ -1264,6 +1360,10 @@ section,
 
 .services .service-item:hover p {
   color: color-mix(in srgb, var(--default-color), transparent 10%);
+}
+
+.apply-spacing {
+  padding-left: 2rem;
 }
 
 /*--------------------------------------------------------------
@@ -1729,7 +1829,7 @@ section,
 
 .portfolio-details .portfolio-description .testimonial-item p {
   font-style: italic;
-  margin: 0 0 15px 0 0 0;
+  margin: 0 0 15px 0;
   padding: 0;
 }
 
