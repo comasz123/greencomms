@@ -1414,6 +1414,24 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Gallery Section
+--------------------------------------------------------------*/
+.gallery-item {
+  overflow: hidden;
+  border-right: 3px solid var(--background-color);
+  border-bottom: 3px solid var(--background-color);
+  padding: 1rem;
+}
+
+.gallery .gallery-item img {
+  transition: all ease-in-out 0.4s;
+}
+
+.gallery .gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
 .portfolio .portfolio-filters {
